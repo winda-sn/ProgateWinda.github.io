@@ -1,0 +1,403 @@
+/* default css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/*  tambahin cssnya dibawah ini */
+
+.header {
+    color: #fff;
+    height: 65px;
+    width: 100%;
+    background-color: pink;
+    font-family: cursive;
+    position :fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-logo {
+    font-size: 32px;
+    float: left;
+    padding: 10px 50px;
+    color: yellow;
+}
+.header-list {
+     float: right;
+}
+.header-list ul li {
+    font-size: 30px;
+    float: left;
+    padding: 10px 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.header-list ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.header-list li:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.li:active {
+    position: relative;
+    top: 7px;
+}
+
+.header .menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+    padding: 21px 0;
+    margin-right: 10%;
+    display: none;
+}
+
+
+.top-wrapper {
+    padding: 180px 0 100px 0;
+    background-image: url(https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    color: white;
+    text-align: center;
+}
+.top-wrapper a {
+    text-decoration: none;
+}
+.top-wrapper h1 {
+    opacity: 0.7;
+    font-size: 45px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+}
+
+.top-wrapper p {
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-wrapper p {
+    margin: 10px 0;
+}
+.btn {
+    padding: 12px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+.signup {
+    background-color: #239b76;
+}
+
+
+/*  about team */
+
+.aboutTeam-wrapper {
+    padding: 0 15%;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+.aboutTeam-wrapper .container {
+    max-width: 1170px;
+    min-height: 400px;
+    margin: 0 auto;
+}
+
+.aboutTeam-wrapper .container .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+    border-bottom: 1px solid #2980b9;
+}
+
+.aboutTeam-wrapper .container .heading h1 {
+    color: #2980b9;
+    font-weight: bolder;
+
+}
+
+.aboutTeam-wrapper .txt-contents {
+    margin-top: 50px;
+    font-size: 28px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    font-style: italic;
+    color: #0984e3;
+    line-height: 50px;
+} 
+/* Profil Team  */
+.profile-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #2980b9;
+    text-align: center;
+}
+
+
+.profile-wrapper .container {
+    padding: 0 15px;
+    margin: 0 auto;
+
+}
+.profile-anggota {
+    display: flex;
+    margin: 30px 0;
+}
+
+.anggota {
+    flex: auto;
+    width: 20%; /* tambah width kalo gk ada txt-contents*/
+    border-radius: 40px;
+    box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+    margin-right: 20px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.anggota:hover {
+    transform: scale(1.10);
+    transition: all 0.6s;
+}
+
+.profile-wrapper .container .heading {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5f5d60;
+    border-bottom: 2px solid #fff;
+}
+
+.profile-wrapper .container .heading h1 {
+    font-weight: bolder;
+    color: #fff;  
+}
+
+
+.icon img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.icon p {
+    color: #95a5a6;
+    padding: 5px 0;
+}
+/* .biodata-wrapper .txt-contents {
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 15px;
+    color: #34495e;
+} */
+
+h3 {
+    font-size: 24px;
+    font-weight: normal;
+    color: #3498db;
+}
+
+
+
+
+.row::after {
+    clear: both;
+    display: table;
+}
+
+.kontak-wrapper {
+    font-family: "raleway";
+    background-color: #fffffc;
+}
+
+.konten {
+    margin: 100px;
+    /*padding-bottom: 20px;*/
+}
+
+
+.judul h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #457b9d;
+    max-width: 100%;
+}
+
+.row {
+    margin-right: 25px;
+    margin-left: 25px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding-top: 50px;
+    width: 50%;
+    float: left;
+    /*max-width: 100%;*/
+}
+
+.box-1 {
+    flex: 0 0 100%;
+    /*max-width: 100%;*/
+    box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+}
+
+.box-2 {
+    /*flex: 0 0 50%;*/
+    width: 50%;
+    float: left;
+    box-shadow: 0 0 20px rgba(65, 76, 100, 0.05);
+}
+
+.isi-box {
+    padding: 20px 0 30px 0;
+}
+
+.isi-box h3 {
+    text-align: center;
+    font-size: 15px;
+}
+
+.icon-kontak {
+    text-align: center;
+}
+
+.icon-kontak img:hover {
+    background-color: #a8dadc;
+}
+
+.icon-kontak img {
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px solid #457b9d;
+}
+
+.isi-box p {
+    text-align: center;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.form-group {
+    margin-right: 50px;
+    margin-left: 50px;
+    width: 100%;
+}
+
+.form {
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: "raleway";
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #a8dadc;
+    color: white;
+    cursor: pointer;
+}
+
+
+.contents {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.contents p {
+    font-size: 14px;
+    color: #808080;
+    font-family: monospace;
+}
+
+.content-favorite {
+    display: flex;
+}
+.content-items {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    flex: auto;
+    cursor: pointer;
+  
+}
+
+.content-items p {
+    font-size: 15px;
+    padding-top: 10px;
+    color: black;
+    font-family: monospace;
+}
+
+.footer {
+    color: #fff;
+    background-color: pink;
+    width: 100%;
+    padding-bottom: 0px;
+}
+
+
+.footer .container {
+    float: left;
+}
+
+.footer img {
+    width: 100px;
+    padding-top: 30px;
+}
+
+.footer p {
+    color: white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.footer-list {
+    float: right;
+}
+
+.footer-list li {
+    padding-bottom: 20px;
+    list-style: none;
+}
+
+.footer .clear {
+    clear: both;
+}
